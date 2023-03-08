@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29F0731029B91E220001786D /* DayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0730F29B91E220001786D /* DayDetailViewModel.swift */; };
 		41978F4327B9C26C001CB2C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F4227B9C26C001CB2C0 /* AppDelegate.swift */; };
 		41978F4527B9C26C001CB2C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F4427B9C26C001CB2C0 /* SceneDelegate.swift */; };
 		41978F4A27B9C26C001CB2C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41978F4827B9C26C001CB2C0 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29F0730F29B91E220001786D /* DayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewModel.swift; sourceTree = "<group>"; };
 		41978F3F27B9C26C001CB2C0 /* Forecast_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forecast_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41978F4227B9C26C001CB2C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41978F4427B9C26C001CB2C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +66,9 @@
 		41978F4127B9C26C001CB2C0 /* Forecast_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				41978F6527B9CDA8001CB2C0 /* Controller */,
 				41978F6427B9CDA1001CB2C0 /* Model */,
 				41978F6727B9CDB5001CB2C0 /* View */,
+				41978F6527B9CDA8001CB2C0 /* Controller */,
 				41978F5627B9C2B5001CB2C0 /* Supporting Files */,
 				41978F4827B9C26C001CB2C0 /* Main.storyboard */,
 				41978F4D27B9C26E001CB2C0 /* LaunchScreen.storyboard */,
@@ -105,8 +107,9 @@
 		41978F6727B9CDB5001CB2C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */,
+				29F0730F29B91E220001786D /* DayDetailViewModel.swift */,
 				41978F7027B9CF46001CB2C0 /* DayDetailsViewController.swift */,
+				41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F0731029B91E220001786D /* DayDetailViewModel.swift in Sources */,
 				41978F6F27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift in Sources */,
 				41978F6D27B9CE70001CB2C0 /* ResultError.swift in Sources */,
 				41978F4327B9C26C001CB2C0 /* AppDelegate.swift in Sources */,
