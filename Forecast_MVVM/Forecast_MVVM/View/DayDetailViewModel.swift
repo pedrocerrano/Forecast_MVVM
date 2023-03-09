@@ -26,8 +26,8 @@ class DayDetailViewModel {
         self.fetchForecastData()
     }
     
-    private func fetchForecastData() {
-        NetworkingContoller.fetchDays { result in
+    func fetchForecastData() {
+        networkingController.fetchDays { result in
             switch result {
             case .success(let forecastData):
                 self.forecastData = forecastData

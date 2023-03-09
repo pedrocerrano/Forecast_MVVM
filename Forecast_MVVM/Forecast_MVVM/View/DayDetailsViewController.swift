@@ -53,9 +53,9 @@ extension DayDetailsViewController: DayDetailViewDelegate {
         DispatchQueue.main.async {
             self.cityNameLabel.text = self.viewModel.forecastData?.cityName ?? "No City Found"
             self.currentDescriptionLabel.text = currentDay.weather.description
-            self.currentTempLabel.text = "\(currentDay.temp)F"
-            self.currentLowLabel.text = "\(currentDay.lowTemp)F"
-            self.currentHighLabel.text = "\(currentDay.highTemp)F"
+            self.currentTempLabel.text = "\(currentDay.temp)°F"
+            self.currentLowLabel.text = "\(currentDay.lowTemp)°F"
+            self.currentHighLabel.text = "\(currentDay.highTemp)°F"
             self.dayForcastTableView.reloadData()
         }
     }

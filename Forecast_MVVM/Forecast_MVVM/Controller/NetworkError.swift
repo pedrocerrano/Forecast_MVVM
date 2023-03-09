@@ -1,5 +1,5 @@
 //
-//  ResultError.swift
+//  NetworkError.swift
 //  Forecast_MVVM
 //
 //  Created by Karl Pfister on 2/13/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ResultError: LocalizedError {
+enum NetworkError: LocalizedError {
     
     case invalidURL(URL)
     case thrownError(Error)
