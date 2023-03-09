@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29EE290229BA63CE0065AD28 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		41978F3627B9C26C001CB2C0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +117,7 @@
 			children = (
 				29F0730F29B91E220001786D /* DayDetailViewModel.swift */,
 				41978F7027B9CF46001CB2C0 /* DayDetailsViewController.swift */,
-				41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */,
+				29EE290229BA63CE0065AD28 /* Custom Views */,
 			);
 			path = View;
 			sourceTree = "<group>";
