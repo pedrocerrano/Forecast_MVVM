@@ -18,16 +18,16 @@ class DayDetailViewModel {
         return forecastData?.days ?? []
     }
     private weak var delegate: DayDetailViewDelegate?
-    private let networkingController: NetworkingContoller
+    private let networkingController: NetworkingService
     
-    init(delegate: DayDetailViewDelegate, networkingController: NetworkingContoller = NetworkingContoller()) {
+    init(delegate: DayDetailViewDelegate, networkingController: NetworkingService = NetworkingService()) {
         self.delegate = delegate
         self.networkingController = networkingController
         self.fetchForecastData()
     }
     
     func fetchForecastData() {
-        networkingController.fetchDays { result in
+        networkingController.fetchDays(with: .dayDetail) { result in
             switch result {
             case .success(let forecastData):
                 self.forecastData = forecastData
