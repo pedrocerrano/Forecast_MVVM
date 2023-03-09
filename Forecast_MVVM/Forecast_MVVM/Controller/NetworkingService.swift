@@ -7,8 +7,12 @@
 
 import Foundation
 
-class NetworkingService {
-    
+protocol NetworkingServicable {
+    func fetchDays(with endpoint: DayDetailEndpoint, completion: @escaping (Result<TopLevelDictionary, NetworkError>) -> Void)
+}
+
+class NetworkingService: NetworkingServicable {
+
     func fetchDays(with endpoint: DayDetailEndpoint, completion: @escaping (Result<TopLevelDictionary, NetworkError>) -> Void) {
         guard let finalURL = endpoint.fullURL else {return}
   

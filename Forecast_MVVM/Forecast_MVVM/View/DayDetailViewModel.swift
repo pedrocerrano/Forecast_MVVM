@@ -18,7 +18,7 @@ class DayDetailViewModel {
         return forecastData?.days ?? []
     }
     private weak var delegate: DayDetailViewDelegate?
-    private let networkingController: NetworkingService
+    private let networkingController: NetworkingServicable
     
     init(delegate: DayDetailViewDelegate, networkingController: NetworkingService = NetworkingService()) {
         self.delegate = delegate
